@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Report</title>
+  <script>
+    function checkPassword() {
+      const password = prompt("Enter password:");
+      if (password === "md1234") {
+        window.location.href = "test.html";
+      } else {
+        alert("Incorrect password");
+        window.location.reload();
+      }
+    }
+    window.onload = checkPassword;
+  </script>
+</head>
+<body>
+  <h2>Loading report...</h2>
+</body>
+</html>
